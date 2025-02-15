@@ -23,7 +23,7 @@ document.getElementById('encodeMessageBtn').addEventListener('click', async () =
   formData.append('image', imageFile);
   formData.append('message', message);
 
-  const response = await fetch('https://your-render-backend-url/encode', {
+  const response = await fetch('https://backend-f1hw.onrender.com', {
     method: 'POST',
     body: formData,
   });
@@ -50,7 +50,7 @@ document.getElementById('decodeMessageBtn').addEventListener('click', async () =
   const formData = new FormData();
   formData.append('image', imageFile);
 
-  const response = await fetch('https://your-render-backend-url/decode', {
+  const response = await fetch('https://backend-f1hw.onrender.com', {
     method: 'POST',
     body: formData,
   });
